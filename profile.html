@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | StudentHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <h1>🎓 StudentHub</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="profile.html" class="active">Profile</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="profile-card">
+    <img src="https://via.placeholder.com/150" alt="Student Profile">
+    <h2>Heer Patel</h2>
+    <p><strong>Enrollment No:</strong> 24CE001</p>
+    <p><strong>Department:</strong> Computer Science & Engineering</p>
+    <p><strong>Semester:</strong> 3</p>
+    <p><strong>Email:</strong> heer@example.com</p>
+    <p><strong>Phone:</strong> +91 9876543210</p>
+    <a href="#" class="btn" id="editBtn">Edit Profile</a>
+  </section>
+</main>
+
+<!-- ✅ Modal Popup (added) -->
+<div id="editModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Edit Profile</h2>
+    <form id="editForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" value="Heer Patel">
+
+      <label for="enroll">Enrollment No</label>
+      <input type="text" id="enroll" value="24CE001">
+
+      <label for="dept">Department</label>
+      <input type="text" id="dept" value="Computer Science & Engineering">
+
+      <label for="sem">Semester</label>
+      <input type="text" id="sem" value="3">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" value="heer@example.com">
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" value="+91 9876543210">
+
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p class="copyright">© 2026 StudentHub</p>
+</footer>
+
+<!-- ✅ JavaScript for Modal -->
+<script>
+  const modal = document.getElementById("editModal");
+  const editBtn = document.getElementById("editBtn");
+  const closeModal = document.getElementById("closeModal");
+
+  // Open modal
+  editBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    modal.style.display = "block";
+  });
+
+  // Close modal
+  closeModal.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside
+  window.addEventListener("click", function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Handle form submission
+  document.getElementById("editForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Profile updated successfully!");
+    modal.style.display = "none";
+  });
+</script>
+
+</body>
+</html>
