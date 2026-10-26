@@ -1,0 +1,4 @@
+<?php $pageTitle='JSON Examples'; require __DIR__.'/includes/header.php'; ?>
+<section class="page-hero"><div class="container"><p class="eyebrow">FETCH API EXAMPLES</p><h1>Content from <em>JSON.</em></h1><p>These examples demonstrate loading external JSON files and rendering content dynamically.</p></div></section>
+<section class="section-pad"><div class="container"><div class="section-heading"><div><p class="eyebrow">CAMPUS BOARD</p><h2>Latest notices</h2></div><p>Loaded from <code>data/notices.json</code>.</p></div><div id="noticeList" class="notice-grid"><p class="muted">Loading notices…</p></div><div class="section-heading section-heading-spaced"><div><p class="eyebrow">SAMPLE DIRECTORY</p><h2>Student interests</h2></div><p>Sample public data from <code>data/students.json</code>; no private account information.</p></div><div id="sampleStudents" class="sample-student-grid"></div></div></section>
+<?php require __DIR__.'/includes/footer.php'; ?>

@@ -1,0 +1,6 @@
+<?php
+$pageTitle='Registration Form Demo';require __DIR__.'/includes/header.php';
+?>
+<section class="page-hero"><div class="container"><p class="eyebrow">FORM DEMO</p><h1>HTML5 form <em>playground.</em></h1><p>A small standalone demo of native HTML5 input types and browser validation.</p></div></section>
+<section class="section-pad"><div class="container narrow-container"><div class="form-card"><form id="demoForm"><label class="field">Full name<input type="text" name="name" required minlength="2" autocomplete="name"></label><label class="field">Email<input type="email" name="email" required autocomplete="email"></label><label class="field">Date of birth<input type="date" name="birthdate"></label><label class="field">Website<input type="url" name="website" placeholder="https://example.com"></label><label class="field">Favourite number<input type="number" name="number" min="1" max="100"></label><label class="field">Satisfaction (1–10)<input type="range" name="rating" min="1" max="10"></label><button class="btn btn-primary" type="submit">Test form ↗</button><p id="demoFormStatus" class="muted" aria-live="polite"></p></form></div></div></section>
+<?php require __DIR__.'/includes/footer.php'; ?>

@@ -1,0 +1,1 @@
+/* Backwards-compatible note: main JavaScript lives at assets/js/script.js. */
