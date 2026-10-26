@@ -1,4 +1,4 @@
-# StudentHub — Olive Green Edition
+# StudentHub 
 
 A beginner-friendly PHP/MySQL student portal starter project for XAMPP. It includes responsive pages, an olive-green theme, registration/login, session-based access, admin dashboard, student profile, event CRUD API, external JSON-driven FAQ/notices/events, search/filter/sorting/pagination, a slider, modal, notification banner, hamburger navigation, and light/dark theme toggle.
 
